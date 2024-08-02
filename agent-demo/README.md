@@ -1,15 +1,88 @@
+# Contoso Sales Analysis Assistant
 
-## Personal Financial Assistant
+## Why use the OpenAI Assistants API
 
-### Overview
+The OpenAI Assistants API allows you to build conversational agents that can understand and respond to user inputs. You can use the API to automate tasks, provide information, or guide users through a process.
 
-Function Calling with Yfinance to get latest stock prices. Summarization of user provided article. Extract country info from article, extract country, capital and other aspects, and call an API to get more information about each country.
+The Assistants API is not the only way to build conversational agents, but it offers several advantages:
 
-### Objective
+1. Simplicity: The API abstracts away the complexity of building a conversational agent, allowing you to focus on the content and logic of the conversation.
+2. Scalability: The API is designed to handle a large number of concurrent users, making it suitable for production use.
+3. Customization: The API allows you to customize the behavior of the assistant by providing training data and defining conversational flows.
+4. Integration: The API can be integrated with other services and systems, allowing you to build assistants that interact with external data sources.
 
-The objective of the provided Python file is to create an Azure OpenAI Assistant named "Portfolio Management Assistant" using the Azure OpenAI API. The assistant is designed to act as a personal financial assistant, providing information and insights related to a user's investment portfolio. The script initiates a conversation with the assistant, guiding it through various financial queries and scenarios to showcase its capabilities.
+## Objective
 
-### Programming Languages
+This notebook demonstrates the following:
+
+1. Generative AI
+1. Function calling
+1. Code Generation
+
+Reference:
+- Learn more about how to use Assistants with our [How-to guide on Assistants](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/assistant)
+- [Assistants OpenAI Overview](https://platform.openai.com/docs/assistants/overview) 
+
+## Programming Languages
  - Python
 
-### Estimated Runtime: 10 mins
+## Deploy Azure OpenAI Resources
+
+Create OpenAI resources in Azure portal and get the key and endpoint to use in the code. You can follow the instructions [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource).
+
+Ideally use the OpenAI GPT-4o model for best results.
+
+1. Rename the .env.sample file to .env
+2. Add the OpenAI key and endpoint in the .env file
+
+    ```text
+    OPENAI_URI=
+    OPENAI_KEY=
+    OPENAI_VERSION=2024-05-01-preview
+    OPENAI_GPT_DEPLOYMENT=
+    ```
+    
+  ## Installation
+
+Create a Python Virtual Environment
+
+### Windows
+
+1. Create a new Python virtual environment by running the following command in your terminal:
+
+    ```bash
+    python -m venv .venv
+    ```
+
+2. Activate the virtual environment:
+
+    ```bash
+    .venv\Scripts\activate
+    ```
+
+### macOS and Linux
+
+1. Create a new Python virtual environment by running the following command in your terminal:
+
+    ```bash
+    python3 -m venv .venv
+    ```
+
+2. Activate the virtual environment:
+
+    ```bash
+    source .venv/bin/activate
+    ```
+
+### Update pip
+
+```bash
+pip install --upgrade pip
+```
+
+### Pip install required libraries
+
+pip install -r requirements.txt
+
+
+
