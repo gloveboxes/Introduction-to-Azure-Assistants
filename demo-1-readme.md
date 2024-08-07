@@ -38,6 +38,10 @@ The model is interrogating the conversation, and generating code on the fly to a
 
 Prior to the brave new world of AI User Experiences, the user would have to write the code to analyze the data, and then write more code to visualize the data. The AI Studio Assistants Playground is a game changer in this regard. The user can ask questions in natural language and the assistant will generate the code to analyze and visualize the data.
 
+There are currently two tools available in the AI Studio Assistants Playground, the Code Interpreter and File Search. File search is used to upload files supports hybrid keyword search and semantic search for RAG style conversations.
+
+The Code Interpreter is used to write and execute code to analyze and visualize the data and this is the tool that will be used in this demo.
+
 1. Clear any existing chat history.
 1. Type `help` to see a list of sample questions.
 1. Here is an example conversation flow. Note, due to the nature of the AI model, the conversation may not be exactly as shown here.
