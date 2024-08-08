@@ -23,7 +23,6 @@ The following steps will guide you through the process of creating an assistant 
 1. Select Deployment, and choose GPT-4o.
 1. Name the assistant Contoso Sales Assistant.
 1. Select the Prompt section and copy and paste the following text:
-
    ```text
    You are a sales analysis assistant for Contoso. Please be polite, professional, helpful, and friendly.
 
@@ -33,7 +32,6 @@ The following steps will guide you through the process of creating an assistant 
 
    If a question is not related to sales or you cannot answer the question, say, 'contact IT for more assistance.'. If the user asks for help or says 'help', provide a list of sample questions that you can answer.
    ```
-
 1. Select **Tools** and enable **Code Interpreter**.
 1. Select the adjacent **+Add files** and upload the **Contoso_Sales_Revenue_By_Regon_By_Category_By_Product_Type_By_Year_Month.csv** file from the data folder.
 
