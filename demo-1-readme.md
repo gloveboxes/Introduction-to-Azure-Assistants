@@ -91,7 +91,7 @@ Below is an example conversation flow. Note that the actual interaction may vary
 
    ![what are all the product types](media/product-types.png)
 
-1. `Can you show a stacked bar chart of sales of all skiing related gear by region.`
+1. `Can you show a vivid stacked bar chart of sales of all skiing related gear by region.`
 
    ![Can you show a stacked bar chart of sales of ski related equipment by region.](media/ski-related-gear-sales.png)
 
@@ -99,7 +99,12 @@ Below is an example conversation flow. Note that the actual interaction may vary
 
    ![What products are related to skiing](media/ski-related-gear.png)
 
+1. `what were the sales trends for ski gear`
+
+    ![what were the sales trends for ski gear](media/sales-trends-for-ski-gear.png)
+
 1. `I want to download an excel doc for sales of skiing related equipment by region`
+    - I think we have a problem with the business, sales of skiing related equipment are down. I need to download the data to analyze it further.
 
    ![I want to download an excel doc for sales of skiing related equipment by region](media/download-excel.png)
 
