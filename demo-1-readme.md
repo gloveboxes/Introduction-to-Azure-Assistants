@@ -1,6 +1,6 @@
 # Explore Contoso Retail Data
 
-In this demo, we will use the Azure AI Studio Assistants API (Preview) Playground to explore Contoso sales data. The data, stored in a CSV file that you will upload to the playground, includes details on sales revenue by region, category, product type, year, and month. The objective is to demonstrate how to use the AI Studio Assistants Playground for analyzing and visualizing this data with the Assistants API Code Interpreter.
+In this demo, we will utilize the Azure AI Studio Assistants API (Preview) Playground to analyze and visualize Contoso sales data. The dataset, stored in a CSV file that you will upload to the playground, consists of sales revenue details segmented by region, category, product type, year, and month. The goal is to demonstrate how to leverage the AI Studio Assistants Playground and the Assistants API Code Interpreter for data analysis and visualization.
 
 ## Prerequisites
 
@@ -44,23 +44,19 @@ The following steps will guide you through the process of creating an assistant 
 
 ## Introduction to the Demo
 
-The purpose of this demo is to demonstrate how to utilize the AI Studio Assistants Playground for data analysis and visualization using the Assistants API Code Interpreter. In this interactive session, the user will direct the conversation, and the assistant will provide answers and visualizations accordingly.
+This demo showcases how to use the AI Studio Assistants Playground for data analysis and visualization with the Assistants API Code Interpreter. In this session, the user guides the conversation, and the assistant generates answers and visualizations. The model interprets user queries and dynamically generates code, which the Code Interpreter executes. Results are displayed in the chat window.
 
-As part of the process, the model will interpret the conversation and dynamically generate code to respond to user questions. This code is then executed by the Code Interpreter, with the results displayed in the chat window.
+Previously, users had to manually code for data analysis and visualization. The AI Studio Assistants Playground transforms this by enabling natural language queries, allowing the assistant to generate the required code.
 
-Before advancements in AI-driven user experiences, users had to manually write code to analyze and visualize data. The AI Studio Assistants Playground revolutionizes this process by enabling users to ask questions in natural language, allowing the assistant to generate the required code for data analysis and visualization.
-
-Currently, the AI Studio Assistants Playground offers two tools: the Code Interpreter and File Search. The File Search tool facilitates file uploads and supports both keyword and semantic searches for Retrieval-Augmented Generation (RAG) style interactions.
-
-For this demo, the focus will be on the Code Interpreter, which is specifically designed to write and execute code for data analysis and visualization.
+The playground offers two tools: Code Interpreter and File Search. File Search supports file uploads and both keyword and semantic searches for RAG-style interactions. This demo focuses on the Code Interpreter, designed to write and execute code for data analysis and visualization.
 
 ## Why is the Code Interpreter so interesting?
 
-Large Language Models (LLMs) excel at interpreting and generating natural language text. While they may not be particularly strong in directly performing mathematical operations, they are highly proficient in writing code to handle calculations, generate charts, create visualizations, and more. The Code Interpreter is a feature that enables LLMs to produce and execute code in real-time to answer queries and perform computational tasks.
+Large Language Models (LLMs) excel at interpreting and generating natural language text. Although LLMs may not be inherently strong in performing mathematical operations, they are highly effective at writing code to handle complex calculations, generate charts, create visualizations, and more. The Code Interpreter feature allows LLMs to dynamically generate and execute code in real-time, enabling them to answer queries and perform a wide range of computational tasks efficiently.
 
 ## Start the conversation
 
-Below is an example conversation flow. Note that, due to the nature of the AI model, the conversation may not unfold exactly as shown:
+Below is an example conversation flow. Note that the actual interaction may vary due to the inherent behavior of the AI model:
 
 ## Sample Conversation Flow
 
@@ -99,7 +95,7 @@ Below is an example conversation flow. Note that, due to the nature of the AI mo
 
    ![Can you show a stacked bar chart of sales of ski related equipment by region.](media/ski-related-gear-sales.png)
 
-1. `What products are related to skiing\*\*
+1. `What products are related to skiing`
 
    ![What products are related to skiing](media/ski-related-gear.png)
 
