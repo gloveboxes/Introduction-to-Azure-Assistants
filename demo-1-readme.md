@@ -36,6 +36,7 @@ The following steps will guide you through the process of creating an assistant 
    - Revenue: Numeric values representing the sales revenue.
    - Discounts: Numeric values representing the discounts applied to the sales.
    - Shipping Costs: Numeric values representing the shipping costs.
+   - Net Revenue: you can calculate user revenue, discount and shipping cost
 
    Your responsibilities include the following:
    - Analyze and provide insights based on the available sales data.
