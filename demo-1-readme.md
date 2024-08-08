@@ -45,7 +45,7 @@ The following steps will guide you through the process of creating an assistant 
     Remember to maintain a professional and courteous tone throughout your interactions. Avoid sharing any sensitive or confidential information.
    ```
 1. Select **Tools** and enable **Code Interpreter**.
-1. Select the adjacent **+Add files** and upload the **Contoso_Sales_Revenue_By_Regon_By_Category_By_Product_Type_By_Year_Month.csv** file from the data folder.
+1. Select the adjacent **+Add files** and upload the **Contoso-Sales-Data.csv** file from the data folder.
 
 ## How to Load an Existing Assistant
 
@@ -79,32 +79,30 @@ Below is an example conversation flow. Note that the actual interaction may vary
 
    ![example help](media/help.png)
 
-1. `list all the regions`
+1. `what it the total revenue by region, display as a table`
 
    - This includes the regions available in the CSV data into the context of the conversation.
 
-   ![This includes the regions available in the CSV data into the context of the conversation](media/list-regions.png)
+   ![This includes the regions available in the CSV data into the context of the conversation](media/total-sales-by-region-as-table.png)
 
-1. `what are the total sales for Asia broken down by category. Display as a table`
-    - Note, I'm asking for sales data for Asia, the data is for ASIA-PACIFIC, but the LLM figures it out.
+1. `what are the total sales for Asia broken down by category, display as a table`
+    - Notes
+        1. I'm asking for sales data for **Asia**, the data is for **ASIA-PACIFIC**, but the LLM figures it out.
+        1. Hover over the **code_interpreter** to see the generated Python code.
 
-   ![what are the total sales for asia broken down by category](media/total-sales-asia.png)
+   ![what are the total sales for Asia broken down by category, display as a table](media/total-sales-for-asia-by-category-hover-code-generated.png)
 
-1. `show as a bar chart of sales`
+1. `show me the top selling product categories by region, display as a stacked bar chart`
 
-   ![show as a bar chart of sales](media/show-bar-chart-asia-sales.png)
+   ![show me the top selling products by region, display as a stacked bar chart](media/top-selling-product-categories-by-region.png)
 
-1. `show me the top 5 selling products by region`
+1. `what are the top 3 best selling products`
+    
 
-   ![show me the top 5 selling products by region](media/top-5-selling-products-by-region.png)
 
-<!-- 1. `what are all the product types`
+    ![ignore other](media/ignore-the-other-category.png)
 
-   - This incorporates the product types from the CSV data into the conversation, improving the AI's understanding of product types and their relationships. This capability will be demonstrated in the next question about ski-related equipment.
-
-   ![what are all the product types](media/product-types.png) -->
-
-1. `Can you show a vivid stacked bar chart of sales of all skiing related gear by region.`
+1. `show a vivid stacked bar chart of sales of all skiing related gear by region.`
 
    ![Can you show a stacked bar chart of sales of ski related equipment by region.](media/ski-related-gear-sales.png)
 
