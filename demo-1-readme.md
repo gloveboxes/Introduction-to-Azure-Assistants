@@ -91,7 +91,7 @@ Below is an example conversation flow. Note that the actual interaction may vary
 
    ![what are all the product types](media/product-types.png)
 
-1. `Can you show a stacked bar chart of sales of ski related equipment by region.`
+1. `Can you show a stacked bar chart of sales of all skiing related gear by region.`
 
    ![Can you show a stacked bar chart of sales of ski related equipment by region.](media/ski-related-gear-sales.png)
 
