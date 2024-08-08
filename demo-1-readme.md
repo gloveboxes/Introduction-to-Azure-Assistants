@@ -75,7 +75,7 @@ Below is an example conversation flow. Note that the actual interaction may vary
 ## Sample Conversation Flow
 
 1. Clear any existing chat history.
-1. `help`
+1. ```help```
 
    - Help uses the assistant instructions to establish the context of the conversation and provides a list of sample questions that the assistant can answer.
 
