@@ -1042,10 +1042,28 @@ ORDER BY
     Year,
     Month;
 
-</sql><sql name="SQL 4*">SELECT
+</sql><sql name="SQL 4">SELECT
 	region as Region,
 	SUM(number_of_orders) AS Orders,
 	SUM(revenue) AS  Revenue,
 	SUM(discount) AS Discount
 FROM sales_data
-</sql><current_tab id="2"/></tab_sql></sqlb_project>
+</sql><sql name="SQL 5">SELECT   
+	SUM(revenue) AS Revenue, 
+	year || '-' || CASE 
+		WHEN month &lt; 10 THEN '0' || month 
+		ELSE month 
+		END AS Month
+FROM sales_data 
+WHERE Month = ? 
+GROUP BY Month, Year 
+ORDER BY Year, Month</sql><sql name="SQL 6*">SELECT  
+	region AS Region,  
+	SUM(number_of_orders) AS Orders,  
+	SUM(revenue) AS Revenue,  
+	SUM(discount) AS Discount,  
+	SUM(shipping_cost) AS ShippingCost,
+	SUM(revenue) - SUM(discount) - SUM(shipping_cost) AS NetRevenue  
+FROM 
+	sales_data
+GROUP BY Region ORDER BY NetRevenue DESC</sql><current_tab id="4"/></tab_sql></sqlb_project>
