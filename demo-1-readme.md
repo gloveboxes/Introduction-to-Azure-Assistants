@@ -85,11 +85,11 @@ Below is an example conversation flow. Note that the actual interaction may vary
 
    ![show me the top 5 selling products by region](media/top-5-selling-products-by-region.png)
 
-1. `what are all the product types`
+<!-- 1. `what are all the product types`
 
    - This incorporates the product types from the CSV data into the conversation, improving the AI's understanding of product types and their relationships. This capability will be demonstrated in the next question about ski-related equipment.
 
-   ![what are all the product types](media/product-types.png)
+   ![what are all the product types](media/product-types.png) -->
 
 1. `Can you show a vivid stacked bar chart of sales of all skiing related gear by region.`
 
