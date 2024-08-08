@@ -75,7 +75,11 @@ Below is an example conversation flow. Note that the actual interaction may vary
 ## Sample Conversation Flow
 
 1. Clear any existing chat history.
-1. ```help```
+1. Ask for help by typing:
+
+   ```text
+   help
+   ```
 
    - Help uses the assistant instructions to establish the context of the conversation and provides a list of sample questions that the assistant can answer.
 
@@ -99,7 +103,7 @@ Below is an example conversation flow. Note that the actual interaction may vary
    ![show me the top selling products by region, display as a stacked bar chart](media/top-selling-product-categories-by-region.png)
 
 1. `what are the top 3 best selling products`
-    
+
 
 
     ![ignore other](media/ignore-the-other-category.png)
