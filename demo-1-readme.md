@@ -86,43 +86,70 @@ Below is an example conversation flow. Note that the actual interaction may vary
 
    ![example help](media/help.png)
 
-1. `what it the total revenue by region, display as a table`
+1. Get business insights by typing:
+
+   ```text
+   what it the total revenue and net revenue by region, display as a table
+   ```
 
    - This includes the regions available in the CSV data into the context of the conversation.
 
    ![This includes the regions available in the CSV data into the context of the conversation](media/total-sales-by-region-as-table.png)
 
-1. `what are the total sales for Asia broken down by category, display as a table`
+1. Let's break down the sales
+
+   ```text
+   what are the total sales for Asia broken down by category, display as a bar chart using vivid colors
+   ```
+
     - Notes
         1. I'm asking for sales data for **Asia**, the data is for **ASIA-PACIFIC**, but the LLM figures it out.
-        1. Hover over the **code_interpreter** to see the generated Python code.
+        1. Hover over the code to the right of **code_interpreter** to see the generated Python code.
 
    ![what are the total sales for Asia broken down by category, display as a table](media/total-sales-for-asia-by-category-hover-code-generated.png)
 
-1. `show me the top selling product categories by region, display as a stacked bar chart`
+1. Let's look for top selling products
+
+   ```text
+   show me the top selling product categories by region, display as a stacked bar chart
+   ```
 
    ![show me the top selling products by region, display as a stacked bar chart](media/top-selling-product-categories-by-region.png)
 
-1. `what are the top 3 best selling products`
+1. Which products have the highest discounts?
 
-
-
-    ![ignore other](media/ignore-the-other-category.png)
+   ```text
+   what were the products with the highest discounts, just give me the top 5, display as a pie chart
+   ```
+   ![what were the products with the highest discounts, just give me the top 5, display as a pie chart](media/products-with-highest-discounts.png)
 
 1. `show a vivid stacked bar chart of sales of all skiing related gear by region.`
 
    ![Can you show a stacked bar chart of sales of ski related equipment by region.](media/ski-related-gear-sales.png)
 
-1. `What products are related to skiing`
+1. What products relate to skiing?
+
+   ```text
+   What products are related to skiing
+   ```
 
    ![What products are related to skiing](media/ski-related-gear.png)
 
-1. `what were the sales trends for ski gear`
+1. I'm interested in the sales trends for ski gear
+
+   ```text
+   what was the profitability of skiing gear by region as a bar chart
+   ```
 
     ![what were the sales trends for ski gear](media/sales-trends-for-ski-gear.png)
 
-1. `I want to download an excel doc for sales of skiing related equipment by region`
-    - I think we have a problem with the business, sales of skiing related equipment are down. I need to download the data to analyze it further.
+1. I want to download an excel doc for sales of skiing related equipment by region
+
+   ```text
+   I want to download an excel doc for sales of skiing related equipment by region
+   ```
+
+    - I think we have a problem with the business, sales of skiing related equipment are down in the middle east. Maybe it's a lack of snow. I need to download the data to analyze it further.
 
    ![I want to download an excel doc for sales of skiing related equipment by region](media/download-excel.png)
 
