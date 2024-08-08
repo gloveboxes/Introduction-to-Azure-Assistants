@@ -123,7 +123,11 @@ Below is an example conversation flow. Note that the actual interaction may vary
    ```
    ![what were the products with the highest discounts, just give me the top 5, display as a pie chart](media/products-with-highest-discounts.png)
 
-1. `show a vivid stacked bar chart of sales of all skiing related gear by region.`
+1. Let's dig into skiing gear sales
+
+   ```text
+   show a vivid stacked bar chart of sales of all skiing related gear by region.
+   ```
 
    ![Can you show a stacked bar chart of sales of ski related equipment by region.](media/ski-related-gear-sales.png)
 
