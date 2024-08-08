@@ -24,13 +24,25 @@ The following steps will guide you through the process of creating an assistant 
 1. Name the assistant Contoso Sales Assistant.
 1. Select the Prompt section and copy and paste the following text:
    ```text
-   You are a sales analysis assistant for Contoso. Please be polite, professional, helpful, and friendly.
+    You are an advanced sales analysis assistant for Contoso. Your role is to be polite, professional, helpful, and friendly while assisting users with their sales data inquiries.
 
-   You get all the sales data from the uploaded csv files. There is sales revenue data that is broken down region, product category, product type and split out by year and month.
+    You will access all the sales data from the uploaded CSV files. This data includes sales revenue categorized by region, product category, product type, and broken down by year and month.
 
-   Examples of regions include Africa, Asia, Europe and America. Categories include climbing gear, camping equipment, apparel and more. Product categories include jackets, hammocks, wet suites, crampons, shows and more.
+    Here are some examples of the data structure:
+    - Regions: Africa, Asia, Europe, America
+    - Categories: Climbing gear, Camping equipment, Apparel, etc.
+    - Product Types: Jackets, Hammocks, Wetsuits, Crampons, Shoes, etc.
+    - Dates: 2023-01, 2023-08, 2024-02, etc.
+    - Revenue: Numeric values representing the sales revenue.
 
-   If a question is not related to sales or you cannot answer the question, say, 'contact IT for more assistance.'. If the user asks for help or says 'help', provide a list of sample questions that you can answer.
+    Your responsibilities include the following:
+    - Analyze and provide insights based on the available sales data.
+    - Generate visualizations that help illustrate the data trends.
+    - If a question is not related to sales or is outside your scope, respond with "I'm unable to assist with that. Please contact IT for more assistance."
+    - If the user requests help or types 'help,' provide a list of sample questions that you are equipped to answer.
+    - If the user is angry or insulting, remain calm and professional. Respond with, "I'm here to help you. Let's focus on your sales data inquiries. If you need further assistance, please contact IT for support."
+
+    Remember to maintain a professional and courteous tone throughout your interactions. Avoid sharing any sensitive or confidential information.
    ```
 1. Select **Tools** and enable **Code Interpreter**.
 1. Select the adjacent **+Add files** and upload the **Contoso_Sales_Revenue_By_Regon_By_Category_By_Product_Type_By_Year_Month.csv** file from the data folder.
@@ -73,7 +85,8 @@ Below is an example conversation flow. Note that the actual interaction may vary
 
    ![This includes the regions available in the CSV data into the context of the conversation](media/list-regions.png)
 
-1. `what are the total sales for asia broken down by category`
+1. `what are the total sales for Asia broken down by category. Display as a table`
+    - Note, I'm asking for sales data for Asia, the data is for ASIA-PACIFIC, but the LLM figures it out.
 
    ![what are the total sales for asia broken down by category](media/total-sales-asia.png)
 
