@@ -1,49 +1,17 @@
 # Contoso Sales Analysis Assistant
 
-## Chat Completions API vs Assistants API
-
-The primitives of the Chat Completions API are Messages, on which you perform a Completion with a Model (gpt-3.5-turbo, gpt-4, etc). It is lightweight and powerful, but inherently stateless, which means you have to manage conversation state, tool definitions, retrieval documents, and code execution manually.
-
-### The primitives of the Assistants API are
-
-- Assistants, which encapsulate a base model, instructions, tools, and (context) documents,
-- Threads, which represent the state of a conversation, and
-- Runs, which power the execution of an Assistant on a Thread, including textual responses and multi-step tool use.
-
-## Why use the OpenAI Assistants API
-
-The OpenAI Assistants API allows you to build conversational agents that can understand and respond to user inputs. You can use the API to automate tasks, provide information, or guide users through a process.
-
-The Assistants API is not the only way to build conversational agents, but it offers several advantages:
-
-1. Simplicity: The API abstracts away the complexity of building a conversational agent, allowing you to focus on the content and logic of the conversation.
-2. Scalability: The API is designed to handle a large number of concurrent users, making it suitable for production use.
-3. Customization: The API allows you to customize the behavior of the assistant by providing training data and defining conversational flows.
-4. Integration: The API can be integrated with other services and systems, allowing you to build assistants that interact with external data sources.
-
-## Objective
-
-This notebook demonstrates the following:
-
-1. Generative AI
-1. Function calling
-1. Code Generation
-
-Reference:
-- Learn more about how to use Assistants with our [How-to guide on Assistants](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/assistant)
-- [Assistants OpenAI Overview](https://platform.openai.com/docs/assistants/overview) 
-
 ## Programming Languages
- - Python
+
+- Python
 
 ## Deploy Azure OpenAI Resources
 
 Create OpenAI resources in Azure portal and get the key and endpoint to use in the code. You can follow the instructions [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource).
 
-Ideally use the OpenAI GPT-4o model for best results.
+These demos were tested with Azure OpenAI GPT-4o model. For best results use the same model or newer.
 
-1. Rename the .env.sample file to .env
-2. Add the OpenAI key and endpoint in the .env file
+1. Rename or copy the **./demos-2-3/.env.sample** file to **.env**
+2. Add the Azure OpenAI key, endpoint, and deployment to the .env file
 
     ```text
     OPENAI_URI=
@@ -51,8 +19,49 @@ Ideally use the OpenAI GPT-4o model for best results.
     OPENAI_VERSION=2024-05-01-preview
     OPENAI_GPT_DEPLOYMENT=
     ```
-    
-  ## Installation
+
+## Demo 1
+
+Explore Contoso Retail Data in the Azure OpenAI Assistants Playground.
+
+[Azure OpenAI Assistants Playground](demo-1-readme.md)
+
+## Demos 2 and 3
+
+Explore Contoso Retail Data in Jupyter Notebooks.
+
+1. An Azure subscription
+1. Access to the Azure OpenAI GPT-4o model deployment
+1. The demos require the Azure OpenAI key, endpoint, and deployment to be added to the **./demos-2-3/.env** file.
+1. Demo 2 and 3 are run in a Python environment. You will need to install the required libraries and run the Jupyter Notebooks. You can run the demos in a Codespace or locally in a dev container or a Python virtual environment.
+
+### Demo 2
+
+1. Set up the .env file with the Azure OpenAI key, endpoint, and deployment.
+1. Run the **[Introduction to Azure OpenAI Function Calling](demo-2-function-calling.ipynb)** Jupyter Notebook. Note, you'll be prompted to select a kernel source. Select the Python Environments, then select the **Recommended** Python environment.
+
+### Demo 3
+
+1. Run the Jupyter Notebook **demo-3-contoso-sales-analysis.ipynb**.
+1. Set up the .env file with the Azure OpenAI key, endpoint, and deployment.
+1. Run the **[Contoso Sales Analysis Assistant](demo-3-contoso-sales-analysis.ipynb)** Jupyter Notebook. Note, you'll be prompted to select a kernel source. Select the Python Environments, then select the **Recommended** Python environment.
+
+### Codespaces
+
+Open the repo [Introduction to Azure Open AI Assistants](https://github.com/microsoft/aitour-azure-openai-assistants) in a Codespace and run the demos in the Jupyter Notebooks.
+
+### Local installation
+
+### Dev Containers
+
+The demos can be run in a Dev Container in Visual Studio Code.
+
+1. Install Visual Studio Code
+1. Install the Remote - Containers extension
+1. Install Docker
+1. Open the repo in Visual Studio Code and click the "Reopen in Container" button
+
+### Python Virtual Environment
 
 Create a Python Virtual Environment
 
@@ -92,7 +101,6 @@ pip install --upgrade pip
 
 ### Pip install required libraries
 
+```bash
 pip install -r requirements.txt
-
-
-
+```
